@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business English Mind Map</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: auto;
+        }
+        
+        .mindmap-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .mindmap {
+            position: relative;
+            width: 1400px;
+            height: 1000px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            overflow: visible;
+        }
+        
+        .central-topic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);
+            z-index: 10;
+            min-width: 200px;
+        }
+        
+        .module-branch {
+            position: absolute;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 12px 18px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #2c3e50;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 120px;
+            text-align: center;
+        }
+        
+        .module-branch:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .subtopic {
+            position: absolute;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 8px 12px;
+            border-radius: 15px;
+            font-size: 11px;
+            color: #2c3e50;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            max-width: 140px;
+            line-height: 1.3;
+        }
+        
+        .related-idea {
+            position: absolute;
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            padding: 6px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            color: #2c3e50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 120px;
+            line-height: 1.2;
+        }
+        
+        .connection-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            transform-origin: left center;
+            border-radius: 1px;
+        }
+        
+        .connection-line.thin {
+            height: 1px;
+            background: linear-gradient(90deg, #a8edea, #fed6e3);
+        }
+        
+        /* Module positioning */
+        .module1 { top: 20%; left: 20%; }
+        .module2 { top: 10%; left: 50%; }
+        .module3 { top: 20%; right: 20%; }
+        .module4 { top: 50%; right: 10%; }
+        .module5 { bottom: 20%; right: 20%; }
+        .module6 { bottom: 10%; left: 50%; }
+        .module7 { bottom: 20%; left: 20%; }
+        .module8 { top: 50%; left: 10%; }
+        .module9 { top: 35%; left: 35%; }
+        
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.9);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 12px;
+            border-radius: 6px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Business English Communication - Modules 1-9 Mind Map</div>
+    
+    <div class="mindmap-container">
+        <div class="mindmap">
+            <!-- Central Topic -->
+            <div class="central-topic">
+                Business English<br>Communication
+            </div>
+            
+            <!-- Connection Lines from Center -->
+            <div class="connection-line" style="top: 48%; left: 35%; width: 150px; transform: rotate(-45deg);"></div>
+            <div class="connection-line" style="top: 42%; left: 48%; width: 120px; transform: rotate(-70deg);"></div>
+            <div class="connection-line" style="top: 48%; right: 35%; width: 150px; transform: rotate(45deg);"></div>
+            <div class="connection-line" style="top: 50%; right: 42%; width: 180px;"></div>
+            <div class="connection-line" style="bottom: 48%; right: 35%; width: 150px; transform: rotate(-45deg);"></div>
+            <div class="connection-line" style="bottom: 42%; left: 48%; width: 120px; transform: rotate(70deg);"></div>
+            <div class="connection-line" style="bottom: 48%; left: 35%; width: 150px; transform: rotate(45deg);"></div>
+            <div class="connection-line" style="top: 50%; left: 42%; width: 180px;"></div>
+            <div class="connection-line" style="top: 48%; left: 40%; width: 100px; transform: rotate(-20deg);"></div>
+            
+            <!-- Module 1: Formal vs Casual Language -->
+            <div class="module-branch module1">
+                Module 1<br>Language Styles
+            </div>
+            <div class="subtopic" style="top: 15%; left: 5%;">
+                Casual Language:<br>• Spontaneous<br>• Personal<br>• Idioms & Slang<br>• Contractions
+            </div>
+            <div class="subtopic" style="top: 25%; left: 25%;">
+                Formal Language:<br>• Structured<br>• Professional<br>• Modal verbs<br>• No contractions
+            </div>
+            <div class="related-idea" style="top: 12%; left: 35%;">Appropriate contexts</div>
+            <div class="related-idea" style="top: 28%; left: 8%;">Building relationships</div>
+            
+            <!-- Module 2: Organization & Places -->
+            <div class="module-branch module2">
+                Module 2<br>Organizations
+            </div>
+            <div class="subtopic" style="top: 5%; left: 35%;">
+                Org. Structures:<br>• Traditional<br>• Flatter<br>• Flat<br>• Flatarchies<br>• Holacratic
+            </div>
+            <div class="subtopic" style="top: 2%; right: 25%;">
+                Place Description:<br>• Adjectives<br>• Prepositions<br>• 3-paragraph structure
+            </div>
+            <div class="related-idea" style="top: 15%; left: 45%;">Departments & Roles</div>
+            <div class="related-idea" style="top: 8%; right: 35%;">Workspace feelings</div>
+            
+            <!-- Module 3: Memo Writing -->
+            <div class="module-branch module3">
+                Module 3<br>Memo Writing
+            </div>
+            <div class="subtopic" style="top: 15%; right: 5%;">
+                Memo Features:<br>• Internal use only<br>• No negative news<br>• 3-4 paragraphs<br>• Golden rules
+            </div>
+            <div class="subtopic" style="top: 25%; right: 25%;">
+                Closing Types:<br>• Complimentary<br>• Directive
+            </div>
+            <div class="related-idea" style="top: 12%; right: 35%;">Similar to email format</div>
+            <div class="related-idea" style="top: 28%; right: 8%;">Concise sentences</div>
+            
+            <!-- Module 4: Business Writing -->
+            <div class="module-branch module4">
+                Module 4<br>Business Writing
+            </div>
+            <div class="subtopic" style="top: 45%; right: 2%;">
+                Writing Quality:<br>• Accuracy<br>• Fluency<br>• Effectiveness
+            </div>
+            <div class="subtopic" style="top: 55%; right: 15%;">
+                Communication Types:<br>• Result-oriented<br>• Informative<br>• Negative<br>• Persuasive
+            </div>
+            <div class="related-idea" style="top: 48%; right: 25%;">Purpose & Audience</div>
+            <div class="related-idea" style="top: 58%; right: 5%;">Document components</div>
+            
+            <!-- Module 5: Request & Complaint Letters -->
+            <div class="module-branch module5">
+                Module 5<br>Request Letters
+            </div>
+            <div class="subtopic" style="bottom: 15%; right: 5%;">
+                Request Letters:<br>• Simple writing<br>• Company data<br>• Positive responses<br>• Quick replies
+            </div>
+            <div class="subtopic" style="bottom: 25%; right: 25%;">
+                Complaint Guidelines:<br>• Act promptly<br>• Show restraint<br>• State facts clearly<br>• Suggest solutions
+            </div>
+            <div class="related-idea" style="bottom: 12%; right: 35%;">Building relationships</div>
+            <div class="related-idea" style="bottom: 28%; right: 8%;">Professional tone</div>
+            
+            <!-- Module 6: Thank You Letters -->
+            <div class="module-branch module6">
+                Module 6<br>Gratitude
+            </div>
+            <div class="subtopic" style="bottom: 5%; left: 35%;">
+                Thank You Expressions:<br>• Thank you (very much)<br>• We appreciate<br>• We are grateful<br>• You've been helpful
+            </div>
+            <div class="subtopic" style="bottom: 2%; right: 25%;">
+                Letter Guidelines:<br>• Write recipient name<br>• Simple language<br>• Send promptly<br>• No money amounts
+            </div>
+            <div class="related-idea" style="bottom: 15%; left: 45%;">Show appreciation</div>
+            <div class="related-idea" style="bottom: 8%; right: 35%;">Mention gifts received</div>
+            
+            <!-- Module 7: Job Applications -->
+            <div class="module-branch module7">
+                Module 7<br>Job Applications
+            </div>
+            <div class="subtopic" style="bottom: 15%; left: 5%;">
+                Application Types:<br>• Solicited<br>• Unsolicited<br>Check qualifications<br>Research vacancies
+            </div>
+            <div class="subtopic" style="bottom: 25%; left: 25%;">
+                Resume Features:<br>• Functional/Chronological<br>• Result-oriented<br>• Shows progress<br>• Communication skills
+            </div>
+            <div class="related-idea" style="bottom: 12%; left: 35%;">Job advertising</div>
+            <div class="related-idea" style="bottom: 28%; left: 8%;">Career planning</div>
+            
+            <!-- Module 8: Appointments & Explanations -->
+            <div class="module-branch module8">
+                Module 8<br>Appointments
+            </div>
+            <div class="subtopic" style="top: 45%; left: 2%;">
+                Meeting Process:<br>• Introduction<br>• Request promises<br>• Suggest time<br>• Confirm details
+            </div>
+            <div class="subtopic" style="top: 55%; left: 15%;">
+                Explanations:<br>• Brief & clear<br>• Listen & respond<br>• Check understanding<br>• Use analogies
+            </div>
+            <div class="related-idea" style="top: 48%; left: 25%;">Formal promises</div>
+            <div class="related-idea" style="top: 58%; left: 5%;">Effective teamwork</div>
+            
+            <!-- Module 9: Negotiation & Reading -->
+            <div class="module-branch module9">
+                Module 9<br>Advanced Skills
+            </div>
+            <div class="subtopic" style="top: 30%; left: 25%;">
+                Negotiation Types:<br>• Win-win<br>• Independent<br>• Win-lose<br>4 stages process
+            </div>
+            <div class="subtopic" style="top: 40%; left: 40%;">
+                Reading Strategy:<br>SQ3R Method:<br>• Survey<br>• Question<br>• Read<br>• Recite<br>• Review
+            </div>
+            <div class="related-idea" style="top: 28%; left: 50%;">Business discussions</div>
+            <div class="related-idea" style="top: 35%; left: 18%;">Inference & conclusions</div>
+            <div class="related-idea" style="top: 42%; left: 55%;">Effective reading</div>
+            
+            <!-- Thin connection lines for subtopics -->
+            <div class="connection-line thin" style="top: 22%; left: 18%; width: 80px; transform: rotate(-30deg);"></div>
+            <div class="connection-line thin" style="top: 8%; left: 48%; width: 60px; transform: rotate(-45deg);"></div>
+            <div class="connection-line thin" style="top: 22%; right: 18%; width: 80px; transform: rotate(30deg);"></div>
+            <div class="connection-line thin" style="top: 50%; right: 12%; width: 60px; transform: rotate(15deg);"></div>
+            <div class="connection-line thin" style="bottom: 22%; right: 18%; width: 80px; transform: rotate(-30deg);"></div>
+            <div class="connection-line thin" style="bottom: 8%; left: 48%; width: 60px; transform: rotate(45deg);"></div>
+            <div class="connection-line thin" style="bottom: 22%; left: 18%; width: 80px; transform: rotate(30deg);"></div>
+            <div class="connection-line thin" style="top: 50%; left: 12%; width: 60px; transform: rotate(-15deg);"></div>
+            <div class="connection-line thin" style="top: 38%; left: 35%; width: 70px; transform: rotate(-10deg);"></div>
+            
+            <!-- Legend -->
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    Central Topic
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    Module Branches
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                    Subtopics
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"></div>
+                    Related Ideas
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add hover effects and interactivity
+        document.querySelectorAll('.module-branch, .subtopic, .related-idea').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+                this.style.zIndex = '100';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+                this.style.zIndex = 'auto';
+            });
+        });
+        
+        // Add click functionality to show more details
+        document.querySelectorAll('.module-branch').forEach((element, index) => {
+            element.addEventListener('click', function() {
+                const moduleNumber = index + 1;
+                alert(`Module ${moduleNumber}: Click to explore detailed content about ${this.textContent.trim()}`);
+            });
+        });
+    </script>
+</body>
+</html>
